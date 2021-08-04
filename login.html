@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <!-- fav icon -->
+    <link rel="icon" type="image/icon" href="images/favicon.png">
+
+    <!-- Font Awesome -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <!-- Animate jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="sass/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- Fotns -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+
+    <style>
+        ::placeholder {
+            font-size: 16px;
+            color: #a9b7c0 !important;
+        }
+
+        /* body {
+            background-image: url(../images/login_bg2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        } */
+
+        .form_heading {
+            font-weight: bold;
+            margin: 0;
+            color: #003366;
+        }
+
+        .form_heading_text {
+            font-size: 12px;
+        }
+
+        .social {
+            color: #333;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 15px 0;
+        }
+
+        .sign_in_btn {
+            border-radius: 20px;
+            border: 1px solid #003366;
+            background-color: #003366;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+        }
+
+        .sign_in_btn:hover {
+            border-radius: 20px;
+            border: 1px solid #003366;
+            background-color: #fde428;
+            color: #003366;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 1s ease;
+        }
+
+        .sign_up_btn{
+            border-radius: 20px;
+            border: 1px solid #003366;
+            background-color: #fde428;
+            color: #003366;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            transition: transform 1s ease;            
+        }
+
+        .sign_up_btn:hover{
+            border-radius: 20px;
+            border: 1px solid #003366;
+            background-color: #003366;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+        }
+
+        .sign_in_btn:active {
+            transform: scale(0.95);
+        }
+
+        .sign_in_btn:focus {
+            outline: none;
+        }
+
+        .sign_in_form {
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 56px 76px;
+            height: auto;
+            text-align: center;
+        }
+
+        .sign_in_form_input{
+            background-color: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+        }
+
+        .login_form {            
+            /* background-color: green; */
+            border-radius: 10px;
+            /* box-shadow: 0 14px 28px rgba(242, 249, 29, 0.01), 0 10px 10px rgba(255, 255, 255, 0.1); */
+            position: relative;
+            /* width: 30%; */
+            max-width: 100%;
+            min-height: 480px;
+        }
+
+        .sign-in-container {
+            left: 0;
+            width: 50%;
+        }
+
+        .overlay-left {
+            transform: translateX(-20%);
+        }
+
+        .login_form.right-panel-active .overlay-left {
+            transform: translateX(0);
+        }
+
+        .overlay-right {
+            right: 0;
+            transform: translateX(0);
+        }
+
+        .login_form.right-panel-active .overlay-right {
+            transform: translateX(20%);
+        }
+
+        .social-container {
+            margin: 20px 0;
+        }
+
+        .social-container a {
+            border: 1px solid #DDDDDD;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px;
+            height: 40px;
+            width: 40px;
+        }
+
+        .login_form_row {
+            padding: 160px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar Section Starts -->
+    <section class="top_bar_section">
+        <!-- Top Bar Starts -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <ul class="text-light top_bar_ul pl-0">
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-envelope fa-lg"></i>
+                                <span class="ml-2 top_bar_ul_text">xyz@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-mobile-alt fa-lg ml-3"></i>
+                                <span class="ml-2">+91-9999999999</span></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-clock fa-lg ml-3"></i>
+                                <span class="ml-2">08:00 AM - 07:00PM</span></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="top_bar_scl_ul float-right pt-0">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square fa-lg mr-2 fb_link"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter-square fa-lg twt_link mr-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-lg lkdn_link"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar Ends -->
+    </section>
+    <!-- Top Bar Section Ends -->
+
+    <!-- Header Starts -->
+    <header>
+        <!-- Navbar Starts -->
+        <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 Navbar">
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="d-inline-block align-top header_logo_img" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navbar Menus Starts -->
+                <ul class="navbar-nav Navbar_ul ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link Nav_link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" href="#">Busniess Setup</a>
+                        <!-- Dropdown starts -->
+                        <div class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+                                <div class="row drop_menu_row">
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                                <div class="row drop_menu_row">
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown starts -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link" href="details.html">Tax & compliance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" href="#">Trsdemark & IP</a>
+                        <!-- Dropdown starts -->
+                        <div class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+                                <div class="row drop_menu_row">
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                                <div class="row drop_menu_row">
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown starts -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link" href="contact-us.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <!-- Navbar Menus Ends -->
+            </div>
+        </nav>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Sing in  Form starts -->
+    <section class="sign-in">
+        <div class="container">
+            <div class="signin-content">
+                <div class="signin-image">
+                    <figure>
+                        <img src="images/signup.jpg" class="img-fluid" loading="lazy" alt="sign-up">
+                    </figure>
+                    <a href="#" class="signup-image-link">Create an account</a>
+                </div>
+                <div class="signin-form">
+                    <h2 class="form-title">Sign up</h2>
+                    <form method="POST" class="register-form" id="login-form">
+                        <div class="form-group">
+                            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="your_name" id="your_name" placeholder="Your Name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                            <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                        </div>
+                        <div class="form-group form-button">
+                            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                        </div>
+                    </form>
+                    <div class="social-login">
+                        <span class="social-label">Or login with</span>
+                        <ul class="socials">
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sing in  Form ends -->
+
+    <!-- footer section starts here -->
+    <section class="footer_section" style="background-color: #003366;">
+        <footer class="Footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer_logo-box">
+                            <a href="#top">
+                                <img src="images/footer_logo.png" alt="footer-logo" class="img-fluid">
+                            </a>
+                        </div>
+                        <p class="footer_logo-box__para text-light">
+                            It is a long established fact that a reader will
+                            be distracted by the readable content of a page
+                            when looking at its layout. The point of using
+                            Lorem Ipsum is that it has a distribution.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footer_service_title--ylw" style="color: #fde428;">Services</h3>
+                        <div class="footer_service_title_links_box">
+                            <ul class="p-0">
+                                <li class="footer_service__list mb-3">
+                                    <a href="#top" class="text-light">Registration</a>
+                                </li>
+                                <li class="footer_service__list mb-3">
+                                    <a href="#" class="text-light">Income Tax</a>
+                                </li>
+                                <li class="footer_service__list mb-3">
+                                    <a href="#" class="text-light">GST</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="footer_service_title_links_box2">
+                            <li class="mb-3">
+                                <a href="#" class="text-light text-decoration-none">Tax Advisory</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-light text-decoration-none">Setting Up New Company</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-light text-decoration-none">Registration</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footer_service_title--ylw" style="color: #fde428;">Contact Us</h3>
+                        <div class="footer_service_title_links_box">
+                            <ul class="p-0">
+                                <li class="footer_service__list mb-3">
+                                    <a href="#top" class="text-light">Akshya Nagar 1st Block 1st Cross,</a>
+                                </li>
+                                <li class="footer_service__list mb-3">
+                                    <a href="#" class="text-light">Rammurthy nagar,</a>
+                                </li>
+                                <li class="footer_service__list mb-3">
+                                    <a href="#" class="text-light">Jaipur-302011</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_menu_box mt-5">
+                    <div class="row">
+                        <ul class="footer_menu_ul text-center mx-auto">
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">Our Projects</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row text-right text-center">
+                        <div class="col-md-12">
+                            <div class="copy_right_box mt-5">
+                                <p class="text-light">Copyrihgts <span>&#169;</span> 2021 Tru-serve Pvt Ltd. All
+                                    Rights Reserved </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- footer section ends here -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+
+</html>

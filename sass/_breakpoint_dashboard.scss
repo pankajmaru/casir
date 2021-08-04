@@ -1,0 +1,39 @@
+$colors: (primary:#002d5b,
+    secondary:#000000,
+    accent:#fde428,
+    text-color:#666666,
+    light:#ffffff);
+
+    $text:1rem;
+    $small:0.75rem;
+    $normal:1.5rem;
+    $heading:2.5rem;
+    $heading2:2rem;
+    $heading3:2.25rem;
+
+//Fonts
+    $lato:'Lato',sans-serif;
+    $libre:'Libre Baskerville',serif;
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){
+    .main_dashboard{
+        margin: 0 0 0 0 !important;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px){
+    //
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px){
+    //
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px){
+    //
+}

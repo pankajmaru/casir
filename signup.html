@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+
+    <!-- fav icon -->
+    <link rel="icon" type="image/icon" href="images/favicon.png">
+
+    <!-- Font Awesome -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <!-- Animate jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="sass/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- Fotns -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+
+    <style>
+        ::placeholder {
+            font-size: .975rem;
+            color: #000;
+         }
+        .form_heading {
+            font-weight: bold;
+            color: #003366;
+            margin: 0;
+        }
+        .form_heading_text {
+            font-size: 12px;
+        }
+        fieldset {
+            color: #002d5b;
+            border: 1px solid #000;
+            padding-left: 1.7rem;
+        }
+        .form_legend {
+            width: auto;
+            margin-bottom: 0rem;
+        }
+        .field_set {
+            height: 70px;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+        .signup_form_label {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        input{
+            background-color: transparent;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar Section Starts -->
+    <section class="top_bar_section">
+        <!-- Top Bar Starts -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <ul class="text-light top_bar_ul ml-0 pl-2">
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-envelope fa-lg"></i>
+                                <span class="ml-2 top_bar_ul_text">xyz@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-mobile-alt fa-lg ml-3"></i>
+                                <span class="ml-2">+91-9999999999</span></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-clock fa-lg ml-3"></i>
+                                <span class="ml-2">08:00 AM - 07:00PM</span></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="top_bar_scl_ul float-right">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square fa-lg mr-2 fb_link"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter-square fa-lg twt_link mr-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-lg lkdn_link"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar Ends -->
+    </section>
+    <!-- Top Bar Section Ends -->
+
+    <!-- Header Starts -->
+    <div class="container p-0">
+        <header>
+            <!-- Navbar Starts -->
+            <nav class="navbar navbar-expand-lg navbar-light Navbar">
+
+                <!-- logo Start-->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" class="img-fluid" alt="logo" width="200" height="150">
+                </a>
+                <!-- logo End-->
+
+                <button class="navbar-toggler navbar_toggler" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <label for="check">
+                        <input type="checkbox" id="check">
+                        <span class="l1"></span>
+                        <span class="l2"></span>
+                        <span class="l3"></span>
+                    </label>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Navbar Menus Starts -->
+                    <ul class="navbar-nav ml-auto Navbar_ul">
+                        <li class="nav-item active">
+                            <a class="nav-link Nav_link dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Busniess
+                                Setup</a>
+
+                            <!-- Dropdown starts -->
+                            <div class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton">
+                                <div class="container-fluid">
+                                    <div class="row drop_menu_row">
+                                        <!-- Dropdown Menus Starts -->
+                                        <div class="col-md-3 drop_menu_coloumn">
+                                            <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                            <a class="dropdown-item dropdown_item d-block"
+                                                href="dashboard.html">dashboard</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                                Partnership</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International
+                                            </h5>
+                                            <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Netherlands
+                                                Incorporation</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                        </div>
+                                    </div>
+                                    <div class="row drop_menu_row">
+                                        <!-- Dropdown Menus Starts -->
+                                        <div class="col-md-3 drop_menu_coloumn">
+                                            <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                            <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                                Company</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                                Partnership</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International
+                                            </h5>
+                                            <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Netherlands
+                                                Incorporation</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Dropdown starts -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link Nav_link" href="details.html">Tax & compliance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link Nav_link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="#">Trademark & IP</a>
+                            <!-- Dropdown starts -->
+                            <div class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton">
+                                <div class="container-fluid">
+                                    <div class="row drop_menu_row">
+                                        <!-- Dropdown Menus Starts -->
+                                        <div class="col-md-3 drop_menu_coloumn">
+                                            <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                            <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                                Company</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                                Partnership</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International
+                                            </h5>
+                                            <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Netherlands
+                                                Incorporation</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                        </div>
+                                    </div>
+                                    <div class="row drop_menu_row">
+                                        <!-- Dropdown Menus Starts -->
+                                        <div class="col-md-3 drop_menu_coloumn">
+                                            <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                            <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                                Company</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                                Partnership</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International
+                                            </h5>
+                                            <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Netherlands
+                                                Incorporation</a>
+                                            <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Dropdown starts -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link Nav_link" href="contact-us.html">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link Nav_link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    <!-- Navbar Menus Ends -->
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- Header Ends -->
+
+    <!-- Sign up form starts -->
+    <section class="signup_section">
+        <h2 class="d-flex justify-content-center display-4 text-dark pt-3">Sign up</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 signup_content">
+                    <div class="signup_form">
+                        <fieldset class="field_set w-10">
+                            <legend class="form_legend">
+                                <h5 class="signup_form_label">
+                                    Name
+                                </h5>
+                            </legend>
+                            <input type="text" name="name" id="name" placeholder="Type Your Name Here" size="50"
+                                class="h-75 border-0 signup_input">
+                        </fieldset>
+                        <fieldset class="field_set w-10">
+                            <legend class="form_legend">
+                                <h5 class="signup_form_label">
+                                    Email
+                                </h5>
+                            </legend>
+                            <input type="email" name="email" id="email" placeholder="Type Your E-mail Here" size="50"
+                                class="h-75 border-0 signup_input">
+                        </fieldset>
+                        <fieldset class="field_set w-10">
+                            <legend class="form_legend">
+                                <h5 class="signup_form_label">
+                                    Password
+                                </h5>
+                            </legend>
+                            <input type="password" name="pass" id="pass" placeholder="Type Your Password Here" size="50"
+                                class="h-75 border-0 signup_input">
+                        </fieldset>
+                        <fieldset class="field_set w-10">
+                            <legend class="form_legend">
+                                <h5 class="signup_form_label">
+                                    Re-Password
+                                </h5>
+                            </legend>
+                            <input type="password" name="re_pass" id="re_pass" placeholder="Type Your Password Here" size="50"
+                                class="h-75 border-0 signup_input">
+                        </fieldset>
+                        <div class="form-group form-button d-flex justify-content-center m-0 p-0">
+                            <button type="submit" class="reg_sbmt_btn">Submit</button>
+                            <!-- <input type="submit" name="signup" id="signup" class="form-submit reg_sbmt_btn" value="Register"> -->
+                        </div>
+                        <span class="d-flex justify-content-center">
+                            <a href="#">
+                                i have already an account
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="signup_image">
+                        <figure>
+                            <img src="images/signup.png" alt="signup" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sign up form ends -->
+
+    <!-- footer section starts here -->
+    <section class="footer_section" style="background-color: #003366;">
+        <footer class="Footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer_logo-box">
+                            <a href="#top">
+                                <img src="images/footer_logo.png" alt="footer-logo" class="img-fluid">
+                            </a>
+                        </div>
+                        <p class="footer_logo-box__para text-light">
+                            It is a long established fact that a reader will
+                            be distracted by the readable content of a page
+                            when looking at its layout. The point of using
+                            Lorem Ipsum is that it has a distribution.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footer_service_title--ylw" style="color: #fde428;">Services</h3>
+                        <div class="footer_service_title_links_box">
+                            <ul class="p-0">
+                                <li class="footer_service__list mb-3">
+                                    <a href="#top" class="text-light">Registration</a>
+                                </li>
+                                <li class="footer_service__list mb-3">
+                                    <a href="#" class="text-light">Income Tax</a>
+                                </li>
+                                <li class="footer_service__list mb-3">
+                                    <a href="#" class="text-light">GST</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="footer_service_title_links_box2">
+                            <li class="mb-3">
+                                <a href="#" class="text-light text-decoration-none">Tax Advisory</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-light text-decoration-none">Setting Up New Company</a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-light text-decoration-none">Registration</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="footer_service_title--ylw" style="color: #fde428;">Contact Us</h3>
+                        <div class="footer_service_title_links_box">
+                            <ul class="p-0">
+                                <li class="footer_service__list mb-3">
+                                    <a href="#top" class="text-light">Akshya Nagar 1st Block 1st Cross,</a>
+                                </li>
+                                <li class="footer_service__list mb-3">
+                                    <a href="#" class="text-light">Rammurthy nagar,</a>
+                                </li>
+                                <li class="footer_service__list mb-3">
+                                    <a href="#" class="text-light">Jaipur-302011</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_menu_box mt-5">
+                    <div class="row">
+                        <ul class="footer_menu_ul text-center mx-auto">
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">Our Projects</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-light text-decoration-none">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row text-right text-center">
+                        <div class="col-md-12">
+                            <div class="copy_right_box mt-5">
+                                <p class="text-light">Copyrihgts <span>&#169;</span> 2021 Tru-serve Pvt Ltd. All
+                                    Rights Reserved </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- footer section ends here -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

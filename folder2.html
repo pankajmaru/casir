@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- fav icon -->
+    <link rel="icon" type="image/icon" href="images/favicon.png">
+
+    <!-- Font Awesome -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <!-- Animate jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="sass/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Fotns -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+    <style>
+        .serach_input {
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar Section Starts -->
+    <section class="top_bar_section">
+        <!-- Top Bar Starts -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <ul class="text-light top_bar_ul pl-0">
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-envelope fa-lg"></i>
+                                <span class="ml-2 top_bar_ul_text">xyz@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-mobile-alt fa-lg ml-3"></i>
+                                <span class="ml-2">+91-9999999999</span></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-clock fa-lg ml-3"></i>
+                                <span class="ml-2">08:00 AM - 07:00PM</span></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="top_bar_scl_ul float-right pt-0">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square fa-lg mr-2 fb_link"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter-square fa-lg twt_link mr-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-lg lkdn_link"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar Ends -->
+    </section>
+    <!-- Top Bar Section Ends -->
+    <!-- Header Starts -->
+    <header>
+        <!-- Navbar Starts -->
+        <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3 Navbar">
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="d-inline-block align-top header_logo_img" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navbar Menus Starts -->
+                <ul class="navbar-nav Navbar_ul ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link Nav_link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" href="#">Busniess Setup</a>
+                        <!-- Dropdown starts -->
+                        <div class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+                                <div class="row drop_menu_row">
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                                <div class="row drop_menu_row">
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown starts -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link" href="details.html">Tax & compliance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" href="#">Trsdemark & IP</a>
+                        <!-- Dropdown starts -->
+                        <div class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+                                <div class="row drop_menu_row">
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                                <div class="row drop_menu_row">
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown starts -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link" href="contact-us.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <!-- Navbar Menus Ends -->
+            </div>
+        </nav>
+    </header>
+    <!-- Header Ends -->
+    <!-- Left sidebar starts here -->
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 p-0 m-0">
+                    <aside class="sidebar_left">
+                        <h3 class="font-weight-bold text-light ml-5">
+                            Menus
+                        </h3>
+                        <hr class="underline">
+                        <ul class="dash_icons_ul ml-2">
+                            <li><a href="#"><i class="fas fa-file dash_icons"></i>menu</a></li>
+                            <li><a href="#"><i class="fas fa-file dash_icons"></i>menu</a></li>
+                            <li><a href="#"><i class="fas fa-file dash_icons"></i>menu</a></li>
+                            <li><a href="#"><i class="fas fa-file dash_icons"></i>menu</a></li>
+                            <li><a href="#"><i class="fas fa-file dash_icons"></i>menu</a></li>
+                        </ul>
+
+                    </aside>
+                </div>
+                <!-- dashboard inner content starts -->
+                <div class="col-md-8">
+                    <div class="bg_inner_cntnt">
+                        <nav class="navbar">
+                            <form class="form-inline form_inline rounded-pill mr-sm-2">
+                                <input class="form-control serach_input" type="search" placeholder="Search"
+                                    aria-label="Search" size="27">
+                                <span class="search_icon_box float-right">
+                                    <a href="#" class="ml-3 mr-2">
+                                        <img src="images/search.png" alt="search" class="img-fluid">
+                                    </a>
+                                </span>
+                            </form>
+                            <div>
+                                <button class="add_folder_btn rounded-pill shadow align-middle mr-1">
+                                    <i class="fas fa-plus"></i>
+                                    <!-- <img src="images/plus.png" alt="plus" class="img-fluid pr-1" width="15" height="10"> -->
+                                    Add Folder
+                                </button>
+                                <button class="add_folder_btn rounded-pill shadow align-middle mr-1">
+                                    <i class="fas fa-upload"></i>
+                                    <!-- <img src="images/up-arrow.png" alt="plus" class="img-fluid pr-1" width="20"
+                                        height="30"> -->
+                                    Upload Files
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="h-100 w-100 mt-3 p-4 folder_box">
+                            <!-- Breadcrumb starts -->
+                            <div class="col-auto w-100 breadcrumb_box">
+                                <nav aria-label="breadcrumb" class="second">
+                                    <ol class="breadcrumb bread_crumb p-0 m-0">
+                                        <li class="breadcrumb-item breadcrumb_item font-weight-bold">
+                                            <a class="text-uppercase" href="#">
+                                                <span class="mr-md-3 mr-2 breadcrumb_item__step">Dashboard</span>
+                                            </a>
+                                            <i class="fa fa-angle-double-right arrw_icon" aria-hidden="true"></i>
+                                        </li>
+                                        <li class="breadcrumb-item font-weight-bold">
+                                            <a class="black-text text-uppercase" href="#">
+                                                <span class="mr-md-3 mr-2 breadcrumb_item__step">epayments</span>
+                                            </a>
+                                            <i class="fa fa-angle-double-right text-uppercase arrw_icon"
+                                                aria-hidden="true"></i>
+                                        </li>
+                                        <li class="breadcrumb-item font-weight-bold">
+                                            <a class="black-text text-uppercase active-2" href="#">
+                                                <span class="breadcrumb_item__step">STUDENTS FEES</span>
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <!-- Breadcrumb ends -->
+                            <hr class="underline mt-4">
+                            <!-- Folder box start -->
+                            <h5 class="font-weight-bold text-light folder_box__heading">Project File</h5>
+                            <div class="row folder_box__row">
+                                <!-- files start here -->
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-folder fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    loreim loreim
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-file-pdf fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Report.pdf
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-file-excel fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Weekly Report.xlsx
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-file-word fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Data.docx
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-file-word fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Data.docx
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-file-word fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Data.docx
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-file-word fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Data.docx
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-file-word fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Data.docx
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- files end here -->
+                            </div>
+                            <!-- Folder box ends -->
+                            <!-- Recent file table start -->
+                            <div class="recent_files_box mt-4">
+                                <h5 class="font-weight-bold text-light folder_box__heading mt-5">Recent files</h5>
+                                <table class="w-100">
+                                    <tbody>
+                                        <tr class="table_row shadow-sm">
+                                            <td>
+                                                <i class="fas fa-file-pdf fa-2x"></i>
+                                                <a href="#" class="row-link"></a>
+                                            </td>
+                                            <td class="w-25">
+                                                Weekly reports
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="w-25 text-muted">
+                                                PDF File
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                last modified
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                <a href="#" tabindex="-1" class="d-flex justify-content-center">
+                                                    <i class="far fa-arrow-alt-circle-down fa-2x"></i>
+                                                </a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                <span class="float-right folder_box_dot_icon" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h fa-1x"></i>
+                                                </span>
+                                                <div class="dropdown-menu folder_menus"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row shadow-sm">
+                                            <td>
+                                                <i class="fas fa-file-pdf fa-2x"></i>
+                                                <a href="#" class="row-link"></a>
+                                            </td>
+                                            <td class="w-25">
+                                                Weekly reports
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="w-25 text-muted">
+                                                PDF File
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                last modified
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                <a href="#" tabindex="-1" class="d-flex justify-content-center">
+                                                    <i class="far fa-arrow-alt-circle-down fa-2x"></i>
+                                                </a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                <span class="float-right folder_box_dot_icon" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h fa-1x"></i>
+                                                </span>
+                                                <div class="dropdown-menu folder_menus"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row shadow-sm">
+                                            <td>
+                                                <i class="fas fa-file-pdf fa-2x"></i>
+                                                <a href="#" class="row-link"></a>
+                                            </td>
+                                            <td class="w-25">
+                                                Weekly reports
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="w-25 text-muted">
+                                                PDF File
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                last modified
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                <a href="#" tabindex="-1" class="d-flex justify-content-center">
+                                                    <i class="far fa-arrow-alt-circle-down fa-2x"></i>
+                                                </a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                <span class="float-right folder_box_dot_icon" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h fa-1x"></i>
+                                                </span>
+                                                <div class="dropdown-menu folder_menus"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row shadow-sm">
+                                            <td>
+                                                <i class="fas fa-file-pdf fa-2x"></i>
+                                                <a href="#" class="row-link"></a>
+                                            </td>
+                                            <td class="w-25">
+                                                Weekly reports
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="w-25 text-muted">
+                                                PDF File
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                last modified
+                                                <a href="#" tabindex="-1" class="row-link"></a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                <a href="#" tabindex="-1" class="d-flex justify-content-center">
+                                                    <i class="far fa-arrow-alt-circle-down fa-2x"></i>
+                                                </a>
+                                            </td>
+                                            <td class="text-muted w-25">
+                                                <span class="float-right folder_box_dot_icon" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-h fa-1x"></i>
+                                                </span>
+                                                <div class="dropdown-menu folder_menus"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Recent file table ends -->
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard inner content starts -->
+                <!-- right siderbar strats -->
+                <div class="col-md-2 sidebar_right">
+                    <div class="profile_box text-center">
+                        <div class="profile_image">
+                            <img src="images/avatar.png" alt="avatar" class="img-fluid avatar_img" width="150"
+                                height="100">
+                        </div>
+                        <div class="text-center pt-3">
+                            <hs5 class="text-light font-weight-bold m-0 p-0">Lorem ipsum dolor</h5>
+                                <small class="text-muted">
+                                    adipisicing elit
+                                </small>
+                        </div>
+                        <hr class="underline">
+                    </div>
+                    <div>
+                        <ul class="sidebar_menus_icons_ul">
+                            <li class="text-light">
+                                <a href="#">
+                                    <i class="far fa-envelope text-light siderbar_icons"></i>
+                                    <span class="siderbar_icons__title text-light">Mesages</span>
+                                </a>
+                            </li>
+                            <li class="text-light">
+                                <a href="#">
+                                    <i class="far fa-bell text-light siderbar_icons"></i>
+                                </a>
+                                <span class="siderbar_icons__title text-light">Notification</span>
+                            </li>
+                            <li class="text-light">
+                                <a href="#">
+                                    <i class="fas fa-cog text-light siderbar_icons"></i>
+                                </a>
+                                <span class="siderbar_icons__title text-light">Settings</span>
+                            </li>
+                            <li class="text-light">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-sign-out-alt text-light siderbar_icons"></i>
+                                    <span class="siderbar_icons__title text-light">Logout</span>
+                                </a>
+                            </li>
+                            <li class="text-light">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

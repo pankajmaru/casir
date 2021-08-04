@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- fav icon -->
+    <link rel="icon" type="image/icon" href="images/favicon.png">
+
+    <!-- Font Awesome -->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <!-- Animate jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Fotns -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+    <style>
+        .serach_input {
+            box-shadow: none !important;
+        }
+        </style>
+</head>
+
+<body>
+    <!-- Top Bar Section Starts -->
+    <section class="top_bar_section">
+
+        <!-- Top Bar Starts -->
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <ul class="text-light top_bar_ul pl-0">
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-envelope fa-lg"></i>
+                                <span class="ml-2 top_bar_ul_text">xyz@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-mobile-alt fa-lg ml-3"></i>
+                                <span class="ml-2">+91-9999999999</span></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light">
+                                <i class="fas fa-clock fa-lg ml-3"></i>
+                                <span class="ml-2">08:00 AM - 07:00PM</span></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- top header social icons starts -->
+                <div class="col-md-4">
+                    <ul class="top_bar_scl_ul float-right pt-0">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square fa-lg mr-2 fb_link"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter-square fa-lg twt_link mr-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-lg lkdn_link"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- top header social icons ends -->
+            </div>
+        </div>
+        <!-- Top Bar Ends -->
+    </section>
+    <!-- Top Bar Section Ends -->
+
+    <!-- Header Starts -->
+    <header>
+        <!-- Navbar Starts -->
+        <nav class="navbar navbar-expand-lg navbar-light dashbaord_Navbar">
+            <!-- logo Start -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" class="d-inline-block align-top dashboard_logo_img" alt="logo">
+            </a>
+            <!-- logo End -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Navbar Menus Starts -->
+                <ul class="navbar-nav dashboard_Navbar_ul ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link Nav_link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" href="#">Busniess Setup</a>
+
+                        <!-- Dropdown starts -->
+                        <div class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+                                <div class="row drop_menu_row">
+
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block"
+                                            href="dashboard.html">dashboard</a>
+                                        <a class="dropdown-item dropdown_item" href="editprofile.html">Edit Profile</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                                <div class="row drop_menu_row">
+
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown starts -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link" href="details.html">Tax & compliance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" href="#">Trsdemark & IP</a>
+
+                        <!-- Dropdown starts -->
+                        <div class="dropdown-menu dropdown_menu" aria-labelledby="dropdownMenuButton">
+                            <div class="container-fluid">
+                                <div class="row drop_menu_row">
+
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                                <div class="row drop_menu_row">
+
+                                    <!-- Dropdown Menus Starts -->
+                                    <div class="col-md-3 drop_menu_coloumn">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">Busniess</h5>
+                                        <a class="dropdown-item dropdown_item d-block" href="#">Private Limited
+                                            Company</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Limited Liability
+                                            Partnership</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Sole Proprietorship</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h5 class="font-weight-bold pb-4 mt-3 drop_menu_subheading">International</h5>
+                                        <a class="dropdown-item dropdown_item" href="#">US Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Netherlands Incorporation</a>
+                                        <a class="dropdown-item dropdown_item" href="#">Singapore Incorporation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown Ends -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link" href="contact-us.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link Nav_link" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <!-- Navbar Menus Ends -->
+            </div>
+        </nav>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Dashboard Starts here -->
+    <div class="main_dashboard">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left siderbar strats -->
+                <div class="col-md-2 sidebar_right">
+                    <div class="profile_box text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="profilepic">
+                                <img class="profilepic__image" src="images/avatar.jpg" width="150" height="150" alt="Profibild" />
+                                <div class="profilepic__content">
+                                    <a href="#" class="text-light py-5">
+                                        <span class="profilepic__icon"><i class="fas fa-camera"></i></span>
+                                        <span class="profilepic__text">Edit Profile</span>
+                                    </a>
+                                </div>
+                              </div>
+                            <!-- <div class="avatar">
+                                <img class="avatar__image img-fluid" src="images/avatar.jpg"/>
+                                <a href="#" class="profile_edit" data-toggle="tooltip" data-placement="top" title="Change Image">
+                                    <i class="far fa-edit"></i>
+                                </a>
+                            </div> -->
+                        </div>
+
+                        <!-- Profile Details Starts -->
+                        <div class="text-center pt-3 profile_dtl_box">
+                            <h5 class="text-light font-weight-bold m-0 p-0">Lorem ipsum dolor</h5>
+                            </div>
+                            <small class="text-muted">
+                                adipisicing elit
+                            </small>
+                        <!-- profile details End -->
+
+                        <hr class="underline">
+                    </div>
+                    <div>
+                        <ul class="sidebar_menus_icons_ul ml-0 pl-0">
+                            <div class="nav flex-column nav-pills dash_nav_pill" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link active dash_nav_link" href="editprofile.html">Edit</a>
+                                <a class="nav-link dash_nav_link" data-toggle="pill" href="#v-pills-profile" role="tab">Profile</a>
+                                <a class="nav-link dash_nav_link" data-toggle="pill" href="#v-pills-messages" role="tab">Messages</a>
+                                <a class="nav-link dash_nav_link" data-toggle="pill" href="#v-pills-settings" role="tab">Settings</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10">
+
+                    <!-- dashboard inner content starts -->
+                    <div class="bg_inner_cntnt">
+                        <nav class="navbar">
+                            <form class="form-inline form_inline mr-sm-2 rounded-pill">
+                                <!-- search input box start -->
+                                <input class="form-control serach_input" type="search" placeholder="Search" aria-label="Search" size="27">
+                                <span class="search_icon_box float-right">
+                                    <a href="#" class="ml-3 mr-2">
+                                        <img src="images/search.png" alt="search" class="img-fluid">
+                                    </a>
+                                </span>
+                            </form>
+                            <!-- add folder button -->
+                            <div class="dash_inner_cta_box">
+                                <button class="add_folder_btn rounded-pill shadow align-middle mr-1">
+                                    <i class="fas fa-plus"></i>
+                                    Add Folder
+                                </button>
+                                <button class="add_folder_btn rounded-pill shadow align-middle mr-1">
+                                    <i class="fas fa-upload"></i>
+                                    Upload Files
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="h-100 w-100 mt-3 p-4 folder_box">
+                            <div class="col-auto w-100 breadcrumb_box text-light">
+                                <nav aria-label="breadcrumb" class="second">
+                                    <ol class="breadcrumb bread_crumb">
+                                        <li class="breadcrumb-item font-weight-bold ">
+                                            <a class="black-text text-uppercase" href="#">
+                                                <span class="mr-md-3 mr-2 text-light">home</span>
+                                            </a>
+                                            <span>
+                                                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                            </span>
+                                        </li>
+                                        <li class="breadcrumb-item font-weight-bold"><a
+                                                class="black-text text-uppercase" href="#"><span
+                                                    class="mr-md-3 mr-2 text-light">epayments</span></a>
+                                            <i class="fa fa-angle-double-right text-uppercase" aria-hidden="true"></i>
+                                        </li>
+                                        <li class="breadcrumb-item font-weight-bold">
+                                            <a class="black-text text-uppercase active-2 " href="#">
+                                                <span class="text-light">STUDENTS FEES</span>
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <!-- <div class="breadcrumb flat p-0 mb-2">
+                                <a href="#" class="active">Dashboard</a>
+                                <a href="#">Folder one</a>
+                                <a href="#">Folder two</a>
+                                <a href="#">Folder three</a>
+                            </div> -->
+
+                            <!-- Breadcrumb ends -->
+
+                            <hr class="underline mt-4">
+
+                            <!-- Folder box start -->
+
+                            <h5 class="font-weight-bold text-light folder_box__heading">Folders</h5>
+                            <div class="row folder_box__row">
+                                <!-- folder start here -->
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-folder fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Certificate
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- folder End here -->
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-folder fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Digilocker
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-folder fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Return
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-folder fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    Others
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-folder fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    loreim loreim
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="text-center text-light folder_file_box">
+                                        <a href="#">
+                                            <i class="far fa-folder fa-3x folder_file_icons"></i>
+                                        </a>
+                                        <div class="card-body m-0 p-0">
+                                            <h5 class="card-title mt-1">
+                                                <a href="#" class="folder_file_icons--title">
+                                                    loreim loreim
+                                                </a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- folder ends here -->
+
+                            </div>
+
+                            <!-- Folder box ends -->
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard inner content ends -->
+            </div>
+        </div>
+    </div>
+    <!-- Dashboard ends here -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
